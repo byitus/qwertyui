@@ -22,8 +22,17 @@
   <!-- ============ LOADING SCREEN ============ -->
   <div class="loader" id="loader">
     <div class="loader__inner">
+      <div class="loader__logo">
+        <picture>
+          <source srcset="images/logo-nav.png" type="image/png">
+          <source srcset="images/logo-nav.svg" type="image/svg+xml">
+          <source srcset="images/logo-nav.webp" type="image/webp">
+          <source srcset="images/logo-nav.jpg" type="image/jpeg">
+          <img src="images/logo-nav.jpeg" alt="AM Architects" class="loader__logo-img" />
+        </picture>
+      </div>
       <div class="loader__mark">
-        <span class="loader__letter">A</span><span class="loader__dot">·</span><span class="loader__letter">M</span>
+        <span class="loader__service">architecture</span><span class="loader__sep">|</span><span class="loader__service">construction</span><span class="loader__sep">|</span><span class="loader__service">interiors</span>
       </div>
       <div class="loader__line"><span class="loader__progress" id="loaderProgress"></span></div>
       <div class="loader__text">Crafting Spaces…</div>
@@ -34,7 +43,14 @@
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a href="#home" class="nav__logo" data-scroll>
-        <img src="images/logo-nav.jpeg" alt="AM Architects" class="nav__logo-img" />
+        <picture class="nav__logo-pic">
+          <source srcset="images/logo-nav.png" type="image/png">
+          <source srcset="images/logo-nav.svg" type="image/svg+xml">
+          <source srcset="images/logo-nav.webp" type="image/webp">
+          <source srcset="images/logo-nav.jpg" type="image/jpeg">
+          <img src="images/logo-nav.jpeg" alt="AM Architects" class="nav__logo-img" />
+        </picture>
+        <span class="nav__logo-fallback">AM</span>
         <span class="nav__logo-sub">Architects · Est. 2013</span>
       </a>
       <nav class="nav__links">
@@ -239,7 +255,7 @@
               <span class="member__badge">Founder</span>
             </div>
             <div class="member__body">
-              <span class="member__role">Principal Architect And Managing Director </span>
+              <span class="member__role">Managing Director</span>
               <h3 class="member__name">Ar. <em>GOWTHAMAN</em></h3>
             </div>
           </article>
@@ -254,24 +270,24 @@
         <div class="team-staff-columns">
           <div class="team team--staff team--staff-half">
             <article class="member member--staff reveal">
-              <div class="member__media"><img src="images/team-staff-01.jpeg" alt="Er. Shifana"></div>
-              <div class="member__body"><span class="member__role">Drafting and Designer</span><h3 class="member__name">Er. <em>SHIFANA</em></h3></div>
+              <div class="member__media"><img src="images/team-staff-09.jpeg" alt="Ar. Amzath Khan"></div>
+              <div class="member__body"><span class="member__role">Chief Architect</span><h3 class="member__name">Ar. <em>AMZATH KHAN</em></h3></div>
             </article>
             <article class="member member--staff reveal">
               <div class="member__media"><img src="images/team-staff-02.jpeg" alt="Ar. Yazhini"></div>
               <div class="member__body"><span class="member__role">Senior Architect</span><h3 class="member__name">Ar. <em>YAZHINI</em></h3></div>
             </article>
             <article class="member member--staff reveal">
-              <div class="member__media"><img src="images/team-staff-03.jpeg" alt="Ar. Aadhil"></div>
-              <div class="member__body"><span class="member__role">Junior Architect</span><h3 class="member__name">Ar. <em>AADHIL</em></h3></div>
-            </article>
-            <article class="member member--staff reveal">
               <div class="member__media"><img src="images/team-staff-04.jpeg" alt="Ar. Logesh"></div>
               <div class="member__body"><span class="member__role">Junior Architect</span><h3 class="member__name">Ar. <em>LOGESH</em></h3></div>
             </article>
             <article class="member member--staff reveal">
-              <div class="member__media"><img src="images/team-staff-05.jpeg" alt="Er. Jerry"></div>
-              <div class="member__body"><span class="member__role">Project Engineer</span><h3 class="member__name">Er. <em>JERRY</em></h3></div>
+              <div class="member__media"><img src="images/team-staff-03.jpeg" alt="Ar. Aadhil"></div>
+              <div class="member__body"><span class="member__role">Junior Architect</span><h3 class="member__name">Ar. <em>AADHIL</em></h3></div>
+            </article>
+            <article class="member member--staff reveal">
+              <div class="member__media"><img src="images/team-staff-01.jpeg" alt="Er. Shifana"></div>
+              <div class="member__body"><span class="member__role">Drafting and Designer</span><h3 class="member__name">Er. <em>SHIFANA</em></h3></div>
             </article>
           </div>
 
@@ -282,19 +298,19 @@
             </article>
             <article class="member member--staff reveal">
               <div class="member__media"><img src="images/team-staff-07.jpeg" alt="Er. Parthiban"></div>
-              <div class="member__body"><span class="member__role">Project Coordinator</span><h3 class="member__name">Er. <em>MAHADEVAN</em></h3></div>
+              <div class="member__body"><span class="member__role">Project Coordinator</span><h3 class="member__name">Er. <em>PARTHIBAN</em></h3></div>
+            </article>
+            <article class="member member--staff reveal">
+              <div class="member__media"><img src="images/team-staff-11.jpeg" alt="Ar. Karthick"></div>
+              <div class="member__body"><span class="member__role">Project Architect &amp; Coordinator</span><h3 class="member__name">Ar. <em>KARTHICK</em></h3></div>
             </article>
             <article class="member member--staff reveal">
               <div class="member__media"><img src="images/team-staff-08.jpeg" alt="Er. Mahadevan"></div>
-              <div class="member__body"><span class="member__role">Project Engineer</span><h3 class="member__name">Er. <em>GUNA</em></h3></div>
-            </article>
-            <article class="member member--staff reveal">
-              <div class="member__media"><img src="images/team-staff-09.jpeg" alt="Ar. Amzath Khan"></div>
-              <div class="member__body"><span class="member__role">Chief Architect</span><h3 class="member__name">Ar. <em>AMZATH KHAN</em></h3></div>
+              <div class="member__body"><span class="member__role">Project Engineer</span><h3 class="member__name">Er. <em>MAHADEVAN</em></h3></div>
             </article>
             <article class="member member--staff reveal">
               <div class="member__media"><img src="images/team-staff-10.jpeg" alt="Guna"></div>
-              <div class="member__body"><span class="member__role">Engineer</span><h3 class="member__name"><em>PARTHIBAN</em></h3></div>
+              <div class="member__body"><span class="member__role">Engineer</span><h3 class="member__name"><em>GUNA</em></h3></div>
             </article>
           </div>
         </div>

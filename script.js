@@ -1045,15 +1045,16 @@ function initHScroll() {
   const fill = $('#hscrollFill');
   const counter = $('#hscrollCount');
   if (!section || !rail) return;
-  if (window.innerWidth <= 800) return; // mobile uses native horizontal scroll
 
   const cards = $$('.hs-card', rail);
   const totalCards = cards.length;
+  const MOBILE = 800;
 
   const getMaxX = () => {
     const viewport = rail.parentElement.clientWidth;
-    const padding = parseInt(getComputedStyle(rail).paddingLeft, 10) || 0;
-    return Math.max(0, rail.scrollWidth - viewport + padding * 2);
+    // rail.scrollWidth already includes the rail's left+right padding.
+    // The amount we need to translate is the overflow beyond the viewport.
+    return Math.max(0, rail.scrollWidth - viewport);
   };
 
   const syncSectionHeight = () => {
@@ -1077,16 +1078,30 @@ function initHScroll() {
     }
   };
 
-  const onScroll = () => render(getProgress());
+  const reset = () => {
+    section.style.height = '';
+    rail.style.transform = '';
+    if (fill) fill.style.width = '';
+  };
+
+  const isMobile = () => window.innerWidth <= MOBILE;
+
+  const onScroll = () => {
+    if (isMobile()) return;
+    render(getProgress());
+  };
   const onResize = () => {
-    syncSectionHeight();
-    onScroll();
+    if (isMobile()) {
+      reset();
+    } else {
+      syncSectionHeight();
+      render(getProgress());
+    }
   };
 
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onResize);
-  syncSectionHeight();
-  onScroll();
+  onResize();
   window.addEventListener('load', onResize, { once: true });
 }
 
@@ -1527,6 +1542,39 @@ function openArticleEditor(id) {
 document.addEventListener('DOMContentLoaded', () => {
   // Run loader FIRST and independently — never blocked by anything else
   runLoader();
+
+  // Safe logo fallback — if the nav logo image fails to load,
+  // hide the picture and reveal the text fallback. No fragile inline handlers.
+  try {
+    const navLogoImg = document.querySelector('.nav__logo-img');
+    if (navLogoImg) {
+      const showFallback = () => {
+        const navLogo = navLogoImg.closest('.nav__logo');
+        if (navLogo) navLogo.classList.add('nav__logo--fallback');
+      };
+      // If the image already failed to load before this listener attached
+      if (navLogoImg.complete && navLogoImg.naturalWidth === 0) {
+        showFallback();
+      } else {
+        navLogoImg.addEventListener('error', showFallback, { once: true });
+      }
+    }
+    // Hide loader logo block if its image fails — without breaking anything
+    const loaderLogoImg = document.querySelector('.loader__logo-img');
+    if (loaderLogoImg) {
+      const hideLoaderLogo = () => {
+        const block = loaderLogoImg.closest('.loader__logo');
+        if (block) block.style.display = 'none';
+      };
+      if (loaderLogoImg.complete && loaderLogoImg.naturalWidth === 0) {
+        hideLoaderLogo();
+      } else {
+        loaderLogoImg.addEventListener('error', hideLoaderLogo, { once: true });
+      }
+    }
+  } catch (e) {
+    console.warn('[logo-fallback] init failed:', e);
+  }
 
   // Run all other init in a resilient way — one failure won't break the rest
   const safe = (name, fn) => { try { fn(); } catch (e) { console.warn(`[${name}] failed:`, e); } };
