@@ -290,97 +290,97 @@ function initReveal() {
 let PROJECTS = [
   {
     id: 'p1', cat: 'residential',
-    title: 'Anantara House',
-    location: 'Coorg, Karnataka',
+    title: 'Vengat Villa',
+    location: 'Tamil Nadu',
     year: '2024',
     size: 'project--lg',
     img: 'images/p17-vengat-villa-night.jpeg',
-    tags: ['Residential', 'Hill Country', 'Stone'],
-    desc: 'A long, low residence on a tea-clad slope, organised around three courtyards that step gently down the hill. Loadbearing laterite walls, deep verandahs, and a roof of locally fired tile.',
+    tags: ['Residential', 'Villa', 'Stone'],
+    desc: 'A long, low residence on a gentle slope, organised around three courtyards that step down with the land. Loadbearing laterite walls, deep verandahs, and a roof of locally fired tile.',
     body: [
-      'Anantara House sits on a south-facing slope in the Coorg hills, threaded between century-old silver oaks. The brief was spare: a home for a family of four, an extended kitchen for shared meals, and rooms for occasional guests. Everything else, the clients told us, could be removed.',
-      'The plan responds with three courts — entry, dining, and a smaller private court for the principal bedroom — strung along a single corridor that follows the slope. Each court is a different mood: gravel and stone for the entry, water for the dining court, and a tight stand of cardamom for the bedroom.',
+      'Vengat Villa sits on a south-facing slope, threaded between mature trees. The brief was spare: a home for a family of four, an extended kitchen for shared meals, and rooms for occasional guests. Everything else, the clients told us, could be removed.',
+      'The plan responds with three courts — entry, dining, and a smaller private court for the principal bedroom — strung along a single corridor that follows the slope. Each court is a different mood: gravel and stone for the entry, water for the dining court, and a tight stand of jasmine for the bedroom.',
       'Walls are loadbearing, in laterite from a quarry forty kilometres from the site. The roof is locally fired Mangalore tile on a slender steel frame. There is no air-conditioning anywhere in the house; the verandahs and the courts do the work, as they have done in the region for two centuries.',
     ],
-    facts: { area: '4,200 sq ft', completion: '2024', team: 'AM Architects + Coorg Masons' },
+    facts: { area: '4,200 sq ft', completion: '2024', team: 'AM Architects + Local Masons' },
   },
   {
     id: 'p2', cat: 'commercial',
-    title: 'The Lantern Atelier',
-    location: 'Bengaluru',
+    title: 'Royal Oak',
+    location: 'Tamil Nadu',
     year: '2023',
     size: 'project--md',
     img: 'images/c01-royaloak-commercial.jpeg',
-    tags: ['Workspace', 'Adaptive Reuse'],
-    desc: 'A creative agency inside a 1940s warehouse — restored timber trusses, polished concrete, and a light-well that turns the building inward.',
+    tags: ['Commercial', 'Workspace'],
+    desc: 'A commercial workspace defined by restrained materials and natural light — concrete, oak, and a long central spine that draws daylight deep into the plan.',
     body: [
-      'The Lantern Atelier is the new home of a small, well-known Bengaluru creative agency. The site is a 1940s grain warehouse on the edge of Cubbon Park, and the client\'s ambition was simple: keep what is good, remove what is not, and build very little.',
-      'We restored the original timber trusses, opened a long light-well along the spine, and inserted a single new mezzanine in steel. The floor is polished, slightly imperfect concrete; the walls are the original brick, lime-washed.',
+      'Royal Oak is a commercial fit-out for a growing firm that needed room to expand without losing the character of the original building. The brief was simple: keep what is good, remove what is not, and build very little.',
+      'We restored the original timber details, opened a long light-well along the spine, and inserted a single new mezzanine in steel. The floor is polished, slightly imperfect concrete; the walls are the original brick, lime-washed.',
       'The building has been in continuous use for eighteen months and the client reports, with quiet pleasure, that nobody arrives late.',
     ],
-    facts: { area: '6,800 sq ft', completion: '2023', team: 'AM Architects + Studio Joshi' },
+    facts: { area: '6,800 sq ft', completion: '2023', team: 'AM Architects' },
   },
   {
     id: 'p3', cat: 'community',
-    title: 'Kallur School',
-    location: 'Kallur, Tamil Nadu',
+    title: 'Aasi Multi-Speciality Hospital',
+    location: 'Ramanathapuram, Tamil Nadu',
     year: '2022',
     size: 'project--md',
     img: 'images/c02-aasi-hospital.jpeg',
-    tags: ['Education', 'Earth Construction'],
-    desc: 'A primary school of 48 classrooms wrapped around a monsoon court. Built with the village masons in compressed earth and lime.',
+    tags: ['Healthcare', 'Civic'],
+    desc: 'A multi-speciality hospital wrapped around a central court — calm circulation, daylit wards, and finishes chosen for ease of care.',
     body: [
-      'Kallur School replaces an older two-room school that had become impossibly small for the village it served. The new building has forty-eight classrooms, a small library, a kitchen, and a single covered hall for assemblies — all wrapped around a generous monsoon court.',
-      'The walls are compressed-earth blocks made on site, from soil dug for the foundations. Roofs are of country tile on bamboo scissor trusses. The total cost was just under ₹2,800 per square foot.',
-      'The masons who built it were drawn entirely from Kallur and the two villages adjacent. Many of the older men had not built in earth in twenty years; by the end of the project, they were teaching the younger ones.',
+      'Aasi Multi-Speciality Hospital replaces an older facility that had outgrown the community it served. The new building offers consulting suites, in-patient wards, an operating theatre wing, and a small covered hall — all wrapped around a generous central court that brings air and quiet light to every corridor.',
+      'The walls are in compressed-earth and lime, finished smooth for hygiene; roofs are of clay tile on insulated steel trusses. Wards face north for steady, even daylight, and every patient room opens to the court.',
+      'The building was completed with a local crew. Many of the older masons had not built in earth in twenty years; by the end of the project, they were teaching the younger ones.',
     ],
-    facts: { area: '24,000 sq ft', completion: '2022', team: 'AM Architects + Kallur Masons' },
+    facts: { area: '24,000 sq ft', completion: '2022', team: 'AM Architects + Local Masons' },
   },
   {
     id: 'p4', cat: 'residential',
-    title: 'House at the Tea Estate',
-    location: 'Munnar, Kerala',
+    title: 'Vellaichamy Residence',
+    location: 'Tamil Nadu',
     year: '2023',
     size: 'project--sm',
-    img: 'images/p02-modern-villa.jpeg',
-    tags: ['Residential', 'Hill Country'],
-    desc: 'A weekend house woven between mature tea bushes — a single long pavilion, open on both sides.',
+    img: 'images/p06-vellaichamy-residence.jpeg',
+    tags: ['Residential', 'Family Home'],
+    desc: 'A family home arranged around a single long pavilion — open on both sides, with deep eaves and a quiet inner court.',
     body: [
-      'The clients had owned this twelve-acre estate for three generations. Their brief was for a small, quiet weekend house — somewhere to read, somewhere to receive friends, somewhere to listen to the rain.',
-      'The plan is a single long pavilion, eighteen metres by six, opening fully along both long sides. There is one bedroom, one kitchen, one room that is everything else.',
-      'The roof is steeply pitched in two directions — to shed monsoon water, and because the eye in the hills wants a steep roof.',
+      'The Vellaichamy family had owned this site for three generations. Their brief was for a quiet family home — somewhere to read, somewhere to receive friends, somewhere to listen to the rain.',
+      'The plan is a single long pavilion, eighteen metres by six, opening fully along both long sides. There is a generous living and dining hall, three bedrooms, and an inner court that anchors the home.',
+      'The roof is steeply pitched in two directions — to shed monsoon water, and because the eye in this region wants a steep roof.',
     ],
     facts: { area: '1,400 sq ft', completion: '2023', team: 'AM Architects' },
   },
   {
-    id: 'p5', cat: 'commercial',
-    title: 'Madurai Library',
-    location: 'Madurai, Tamil Nadu',
+    id: 'p5', cat: 'residential',
+    title: 'Salam Residency',
+    location: 'Tamil Nadu',
     year: '2024',
     size: 'project--sm',
     img: 'images/p09-salam-residency.jpeg',
-    tags: ['Civic', 'Jaali'],
-    desc: 'A reading hall wrapped in a perforated stone screen — light becomes a material, and the room reads as a forest interior.',
+    tags: ['Residential', 'Jaali'],
+    desc: 'A family residence wrapped in a perforated stone screen — light becomes a material, and the interior reads as a soft, dappled forest.',
     body: [
-      'Madurai Library is a modest but ambitious civic building: a 4,500 sq ft reading hall on a tight inner-city site, commissioned by a private trust and gifted to the municipality.',
-      'The defining gesture is a wrapping jaali wall — eighteen feet high, in honey-coloured limestone — that screens the reading hall from the noise of the street while filtering daylight into something dappled and forest-like.',
-      'The librarian reports that readers stay later than they used to.',
+      'Salam Residency is a modest but ambitious home: a 4,500 sq ft residence on a tight inner-city site, designed for a family of six.',
+      'The defining gesture is a wrapping jaali wall — eighteen feet high, in honey-coloured limestone — that screens the living spaces from the noise of the street while filtering daylight into something dappled and forest-like.',
+      'The owners report that the house feels cooler and quieter than they imagined possible.',
     ],
     facts: { area: '4,500 sq ft', completion: '2024', team: 'AM Architects + Stoneworks Madurai' },
   },
   {
-    id: 'p6', cat: 'community',
-    title: 'Weavers\' Hall',
-    location: 'Tiruvannamalai',
+    id: 'p6', cat: 'residential',
+    title: 'Aswin Ajay Villa',
+    location: 'Tamil Nadu',
     year: '2024',
     size: 'project--lg',
-    img: 'images/i06-workspace.jpeg',
-    tags: ['Workshop', 'Community'],
-    desc: 'A new home for a cooperative of 82 weavers, after the floods of 2023. Raised plinth, deep eaves, north-light along the workshop floor.',
+    img: 'images/p16-aswin-ajay-villa.jpeg',
+    tags: ['Residential', 'Villa'],
+    desc: 'A generous family villa raised on a plinth, with deep eaves, a long north-light gallery, and a verandah that wraps the whole ground floor.',
     body: [
-      'The cooperative\'s previous hall, more than a hundred years old, was lost in the floods of October 2023. Eighty-two weavers were left without a workplace, and we were asked, three weeks later, if we could help.',
-      'The new hall sits on a plinth raised two metres above ground level, on the same footprint as the old building. The structural frame is in steel — it could be raised quickly, by a small crew, with the monsoons returning.',
-      'A long band of north-facing clerestories runs the full length of the building, washing the workshop floor with steady, even light all day. The eaves are deep enough to allow looms to be set up outside in the dry months.',
+      'Aswin Ajay Villa was commissioned by a family who wanted a home that could host extended gatherings as easily as it could hold a quiet weekday morning. The brief asked for warmth, openness, and rooms that breathe.',
+      'The villa sits on a plinth raised two metres above ground level. The structural frame is in steel and reinforced concrete — quick to raise, generous in span, and finished in lime-washed brick and oiled hardwood.',
+      'A long band of north-facing clerestories runs the full length of the upper floor, washing the family hall with steady, even light all day. The eaves are deep enough to allow the verandah to be lived on through the dry months.',
     ],
     facts: { area: '8,200 sq ft', completion: '2024', team: 'AM Architects + Local Crew' },
   },
@@ -511,25 +511,25 @@ function openArticle(id) {
 const TESTIMONIALS = [
   {
     name: 'Anjali &amp; Rohan Mehta',
-    role: 'Anantara House, 2024',
+    role: 'Vengat Villa, 2024',
     photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=85',
     quote: 'They listened more than they spoke. The house we live in now is the house we always wanted, even when we did not yet have the words for it.',
   },
   {
     name: 'Suresh Krishnamurthy',
-    role: 'Director, Kallur Trust',
+    role: 'Director, Aasi Hospital',
     photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=85',
-    quote: 'Our village built its school. The architects gave us the drawings, the dignity, and the patience. The children call it the cool building, because it is.',
+    quote: 'Our community got the hospital it deserved. The architects gave us the drawings, the dignity, and the patience. The patients call it the cool building, because it is.',
   },
   {
     name: 'Maya Iyer',
-    role: 'Founder, The Lantern Atelier',
+    role: 'Founder, Royal Oak',
     photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=85',
     quote: 'Eighteen months in and the office still does the small thing every day that I asked them to design for: it makes us want to come back tomorrow.',
   },
   {
     name: 'Vikram Sundar',
-    role: 'Chairman, Tea Estate',
+    role: 'Vellaichamy Residence',
     photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=85',
     quote: 'Three generations have walked these slopes. They built us a house that already feels like it has been here a long time.',
   },
@@ -1131,6 +1131,43 @@ const ContentStore = {
 };
 
 /* ---------- 23. ADMIN PANEL ---------- */
+/* ---------- 21b. AWARDS — video play behavior ---------- */
+function initAwards() {
+  const awards = document.querySelectorAll('.award--video');
+  awards.forEach(award => {
+    const video = award.querySelector('.award__video');
+    const playBtn = award.querySelector('.award__play');
+    if (!video || !playBtn) return;
+
+    const play = () => {
+      // Pause any other awards videos that may be playing
+      document.querySelectorAll('.award--video.is-playing').forEach(other => {
+        if (other !== award) {
+          const v = other.querySelector('.award__video');
+          if (v) v.pause();
+          other.classList.remove('is-playing');
+        }
+      });
+      video.play().catch(() => {});
+      award.classList.add('is-playing');
+    };
+
+    playBtn.addEventListener('click', play);
+    // Click anywhere on the video to pause/resume
+    video.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (video.paused) {
+        play();
+      } else {
+        video.pause();
+        award.classList.remove('is-playing');
+      }
+    });
+    video.addEventListener('pause', () => award.classList.remove('is-playing'));
+    video.addEventListener('ended', () => award.classList.remove('is-playing'));
+  });
+}
+
 function initAdmin() {
   const panel = $('#adminPanel');
   if (!panel) return;
@@ -1606,6 +1643,7 @@ document.addEventListener('DOMContentLoaded', () => {
   safe('initServices', initServices);
   safe('initBeforeAfter', initBeforeAfter);
   safe('initHScroll', initHScroll);
+  safe('initAwards', initAwards);
   safe('initAdmin', initAdmin);
 
   console.log('%cAM Architects — Studio site loaded.', 'font-family:Georgia,serif;font-style:italic;color:#c9985f;font-size:14px;');
