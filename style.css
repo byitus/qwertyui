@@ -318,7 +318,7 @@ body::before {
 .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
 
 .hero__title {
-  font-family: var(--serif);
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
   font-weight: 300;
   font-size: clamp(54px, 10vw, 156px);
   line-height: .96;
@@ -338,8 +338,12 @@ body::before {
 .hero__line:nth-child(1) > * { animation-delay: .55s; }
 .hero__line:nth-child(2) > * { animation-delay: .7s; }
 .hero__line:nth-child(3) > * { animation-delay: .85s; }
-.hero__title em { font-style: italic; font-weight: 300; color: var(--gold-deep); }
-.hero__title .accent { font-style: italic; color: var(--gold-deep); }
+.hero__title,
+.hero__title *,
+.hero__title em,
+.hero__title i { font-style: normal !important; font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif !important; }
+.hero__title em { font-weight: 300; color: var(--gold-deep); }
+.hero__title .accent { color: var(--gold-deep); }
 
 @keyframes rise {
   from { transform: translateY(110%); }
@@ -4414,6 +4418,7 @@ body {
 .member__media {
   position: relative;
   aspect-ratio: 4 / 5;
+  width: 100%;
   overflow: hidden;
   background: linear-gradient(135deg, #1f1518 0%, #0d0a0b 100%);
 }
@@ -4421,7 +4426,15 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center top;
+
+/* Gowthaman (2nd lead card) — scale down to match Balaji's full-body framing */
+.member--lead:nth-of-type(2) .member__media img {
+  object-fit: contain;
+  object-position: center bottom;
+  transform: none;
+  background: #0d0a0b;
+}
   /* Editorial photo enhancement — warm, slight contrast lift, subtle vignette */
   filter:
     contrast(1.08)
